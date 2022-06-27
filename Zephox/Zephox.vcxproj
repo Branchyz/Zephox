@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Zephox\Log.h" />
     <ClInclude Include="src\Zephox\Application.h" />
     <ClInclude Include="src\Zephox\Core.h" />
     <ClInclude Include="src\Zephox.h" />
     <ClInclude Include="src\Zephox\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Zephox\Log.cpp" />
     <ClCompile Include="src\Zephox\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -72,6 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ZP_PLATFORM_WINDOWS;ZP_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Zephox\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -86,6 +89,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ZP_PLATFORM_WINDOWS;ZP_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Zephox\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
