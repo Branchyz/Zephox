@@ -2,7 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Zephox\bin\Debug-x64\Zephox\Zephox.dll</FullPath>
+      <FullPath>C:\Zephox\bin\Debug-windows-x86_64\Zephox\Zephox.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Zephox\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
