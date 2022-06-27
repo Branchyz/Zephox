@@ -1,8 +1,6 @@
 #pragma once
 #include "Application.h"
 
-// Fix errors, git commit & push (token in txt file documenten).
-
 #ifdef ZP_PLATFORM_WINDOWS
 
 extern Zephox::Application* Zephox::CreateApplication();
