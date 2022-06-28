@@ -4,6 +4,9 @@
     <Filter Include="Zephox">
       <UniqueIdentifier>{E32B32E1-CFCD-5CB7-B888-700BA4C9E307}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Zephox\Events">
+      <UniqueIdentifier>{673A89AD-D3FA-04E4-9C35-4E6108B549C0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Zephox.h" />
@@ -16,8 +19,20 @@
     <ClInclude Include="src\Zephox\EntryPoint.h">
       <Filter>Zephox</Filter>
     </ClInclude>
+    <ClInclude Include="src\Zephox\Events\Event.h">
+      <Filter>Zephox\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Zephox\Log.h">
       <Filter>Zephox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zephox\Events\KeyEvent.h">
+      <Filter>Zephox\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zephox\Events\ApplicationEvent.h">
+      <Filter>Zephox\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zephox\Events\MouseEvent.h">
+      <Filter>Zephox\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
