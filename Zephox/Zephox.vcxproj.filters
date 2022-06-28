@@ -19,21 +19,22 @@
     <ClInclude Include="src\Zephox\EntryPoint.h">
       <Filter>Zephox</Filter>
     </ClInclude>
+    <ClInclude Include="src\Zephox\Events\ApplicationEvent.h">
+      <Filter>Zephox\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Zephox\Events\Event.h">
       <Filter>Zephox\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Zephox\Log.h">
-      <Filter>Zephox</Filter>
-    </ClInclude>
     <ClInclude Include="src\Zephox\Events\KeyEvent.h">
-      <Filter>Zephox\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Zephox\Events\ApplicationEvent.h">
       <Filter>Zephox\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Zephox\Events\MouseEvent.h">
       <Filter>Zephox\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Zephox\Log.h">
+      <Filter>Zephox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zppch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Zephox\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Zephox\Log.cpp">
       <Filter>Zephox</Filter>
     </ClCompile>
+    <ClCompile Include="src\zppch.cpp" />
   </ItemGroup>
 </Project>

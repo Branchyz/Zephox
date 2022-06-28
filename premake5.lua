@@ -17,12 +17,16 @@ project "Zephox"
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
 
+	pchheader "zppch.h"
+	pchsource "Zephox/src/zppch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
 	includedirs {
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -68,6 +72,7 @@ project "Sandbox"
 	}
 
 	includedirs {
+		"%{prj.name}/src",
 		"Zephox/vendor/spdlog/include",
 		"Zephox/src"
 	}

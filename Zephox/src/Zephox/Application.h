@@ -1,5 +1,6 @@
 #pragma once
 
+#include "zppch.h"
 #include "Core.h"
 
 namespace Zephox {
