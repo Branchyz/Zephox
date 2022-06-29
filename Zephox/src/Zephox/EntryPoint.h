@@ -6,6 +6,7 @@
 extern Zephox::Application* Zephox::CreateApplication();
 
 int main(int argc, char** argv) {
+	Zephox::Log::Init();
 	auto app = Zephox::CreateApplication();
 	app->Run();
 	delete app;

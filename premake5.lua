@@ -25,6 +25,8 @@ project "Zephox"
 	pchheader "zppch.h"
 	pchsource "Zephox/src/zppch.cpp"
 
+	staticruntime "off"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
