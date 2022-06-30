@@ -34,7 +34,7 @@ namespace Zephox {
 
 		template<typename T>
 		bool Dispatch(EventListener<T> fn) {
-			if (m_Event.GetEventType() == T:GetStaticType()) {
+			if (m_Event.GetEventType() == T::GetStaticType()) {
 				m_Event.Handled = fn(*(T*)&m_Event);
 				return true;
 			}
