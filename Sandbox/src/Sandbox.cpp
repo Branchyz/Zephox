@@ -5,7 +5,7 @@
 class Sandbox : public Zephox::Application {
 public:
 	Sandbox() {
-
+		
 	}
 
 	~Sandbox() {

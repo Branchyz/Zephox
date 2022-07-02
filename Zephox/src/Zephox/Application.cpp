@@ -18,7 +18,6 @@ namespace Zephox {
 	void Application::OnEvent(Event& e) {
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT(OnWindowClose));
-		
 	}
 
 	void Application::Run() {
