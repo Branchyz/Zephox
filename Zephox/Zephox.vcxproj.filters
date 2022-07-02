@@ -40,6 +40,12 @@
     <ClInclude Include="src\Zephox\Events\MouseEvent.h">
       <Filter>Zephox\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Zephox\Layer.h">
+      <Filter>Zephox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zephox\LayerStack.h">
+      <Filter>Zephox</Filter>
+    </ClInclude>
     <ClInclude Include="src\Zephox\Log.h">
       <Filter>Zephox</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Zephox\Application.cpp">
+      <Filter>Zephox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Zephox\Layer.cpp">
+      <Filter>Zephox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Zephox\LayerStack.cpp">
       <Filter>Zephox</Filter>
     </ClCompile>
     <ClCompile Include="src\Zephox\Log.cpp">

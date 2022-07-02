@@ -3,6 +3,7 @@
 #include "zppch.h"
 #include "Events/ApplicationEvent.h"
 #include "Core.h"
+#include "LayerStack.h"
 #include "Window.h"
 
 namespace Zephox {
@@ -14,11 +15,15 @@ namespace Zephox {
 		void Run();
 
 		void OnEvent(Event& e);
+
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* overlay);
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 
-		bool m_Running = true;
 		std::unique_ptr<Window> m_Window;
+		bool m_Running = true;
+		LayerStack m_LayerStack;
 	};
 
 	// Defined in the Zephox App.

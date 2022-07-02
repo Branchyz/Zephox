@@ -59,14 +59,17 @@ project "Zephox"
 	
 	filter "configurations:Debug"
 		defines "ZP_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "ZP_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "ZP_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 
@@ -105,12 +108,15 @@ project "Sandbox"
 	
 	filter "configurations:Debug"
 		defines "ZP_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "ZP_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "ZP_DIST"
+		buildoptions "/MD"
 		optimize "On"
