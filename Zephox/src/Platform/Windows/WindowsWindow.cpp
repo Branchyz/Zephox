@@ -7,6 +7,8 @@
 #include "Zephox/Events/MouseEvent.h"
 #include "Zephox/Events/ApplicationEvent.h"
 
+#include <glad/glad.h>
+
 namespace Zephox {
 	
 	static bool s_GLFWInitialized = false;
@@ -49,6 +51,8 @@ namespace Zephox {
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		ZP_CORE_ASSERT(status, "Initializing Glad failed!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 

@@ -11,8 +11,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Zephox/vendor/GLFW/include"
+IncludeDir["Glad"] = "Zephox/vendor/Glad/include"
 
 include "Zephox/vendor/GLFW"
+include "Zephox/vendor/Glad"
 
 project "Zephox"
 	location "Zephox"
@@ -35,11 +37,13 @@ project "Zephox"
 	includedirs {
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links {
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -50,7 +54,8 @@ project "Zephox"
 
 		defines {
 			"ZP_PLATFORM_WINDOWS",
-			"ZP_BUILD_DLL"
+			"ZP_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands {

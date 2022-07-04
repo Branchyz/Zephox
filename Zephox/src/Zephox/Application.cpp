@@ -2,6 +2,8 @@
 #include "Application.h"
 #include "Zephox/Log.h"
 
+#include <glad/glad.h>
+
 namespace Zephox {
 
 #define BIND_EVENT(x) std::bind(&Application::x, this, std::placeholders::_1)

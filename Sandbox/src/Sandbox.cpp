@@ -5,7 +5,7 @@
 class Sandbox : public Zephox::Application {
 public:
 	Sandbox() {
-		PushLayer(new TestLayer());
+		
 	}
 
 	~Sandbox() {
