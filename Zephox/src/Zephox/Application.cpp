@@ -40,7 +40,7 @@ namespace Zephox {
 
 	void Application::Run() {
 		while (m_Running) {
-			for(Layer* layer : m_LayerStack) {
+			for (Layer* layer : m_LayerStack) {
 				layer->OnUpdate();
 			}
 
