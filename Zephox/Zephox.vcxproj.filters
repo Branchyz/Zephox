@@ -13,6 +13,12 @@
     <Filter Include="Zephox\Events">
       <UniqueIdentifier>{673A89AD-D3FA-04E4-9C35-4E6108B549C0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Zephox\ImGui">
+      <UniqueIdentifier>{b1cb5b76-8bf0-477a-8b49-ac229dab09b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{a0383256-8ebe-4ba9-adf5-65dcfb2576da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
@@ -53,6 +59,12 @@
       <Filter>Zephox</Filter>
     </ClInclude>
     <ClInclude Include="src\zppch.h" />
+    <ClInclude Include="src\Zephox\ImGui\ImGuiLayer.h">
+      <Filter>Zephox\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -71,5 +83,11 @@
       <Filter>Zephox</Filter>
     </ClCompile>
     <ClCompile Include="src\zppch.cpp" />
+    <ClCompile Include="src\Zephox\ImGui\ImGuiLayer.cpp">
+      <Filter>Zephox\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

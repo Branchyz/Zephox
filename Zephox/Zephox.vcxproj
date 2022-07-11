@@ -152,6 +152,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Zephox\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Zephox.h" />
     <ClInclude Include="src\Zephox\Application.h" />
@@ -168,6 +170,8 @@
     <ClInclude Include="src\zppch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Zephox\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Zephox\Application.cpp" />
     <ClCompile Include="src\Zephox\Layer.cpp" />
