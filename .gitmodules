@@ -1,7 +1,6 @@
 [submodule "Zephox/vendor/spdlog"]
 	path = Zephox/vendor/spdlog
 	url = https://github.com/gabime/spdlog
-	
 [submodule "Zephox/vendor/GLFW"]
 	path = Zephox/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
